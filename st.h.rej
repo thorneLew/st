@@ -1,7 +1,10 @@
 --- st.h
 +++ st.h
-@@ -120,3 +120,4 @@ extern char *termname;
- extern unsigned int tabspaces;
- extern unsigned int defaultfg;
- extern unsigned int defaultbg;
-+extern float alpha;
+@@ -85,7 +85,6 @@ void printscreen(const Arg *);
+ void printsel(const Arg *);
+ void sendbreak(const Arg *);
+ void toggleprinter(const Arg *);
+-void copyurl(const Arg *);
+ 
+ int tattrset(int);
+ void tnew(int, int);
