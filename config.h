@@ -16,7 +16,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/usr/bin/fish";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -199,7 +199,7 @@ static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
 	{ MODKEY|ControlMask, XK_l,           externalpipe,   {.v = openurlcmd } },
 	{ MODKEY,             XK_y,           externalpipe,   {.v = copyurlcmd } },
-	{ MODKEY,             XK_o,           externalpipe,   {.v = copyoutput } },
+	{ MODKEY,             XK_w,           externalpipe,   {.v = copyoutput } },
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
